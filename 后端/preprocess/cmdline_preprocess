@@ -1,0 +1,19 @@
+python preprocess/preprocess_utils.py --data_file=data/dev_preprocessed/devset/search.dev.json \
+                                    --output_file=data/dev_preprocessed/devset/search_train_3000_30.json \
+                                    --eval \
+                                    --output \
+                                    --check \
+                                    --mode=train \
+                                    --maxp=3000 \
+                                    --topn=30 \
+                                    --do_clean
+
+python preprocess/preprocess_utils.py --data_file=data/dev_preprocessed/devset/zhidao.dev.json \
+                                    --output_file=data/dev_preprocessed/devset/zhidao_train_3000_30.json \
+                                    --eval \
+                                    --output \
+                                    --check \
+                                    --mode=train \
+                                    --maxp=3000 \
+                                    --topn=30 \
+                                    --do_clean

@@ -1,0 +1,30 @@
+{
+    "creeper": {
+        "creeper_type": "v1"
+    },
+    "mrc":{
+        "model_name_or_path": "checkpoints/mrc_model",
+        "model_type": "bert",
+        "max_seq_length": 512,
+        "doc_stride": 128,
+        "max_query_length": 512,
+        "per_gpu_predict_batch_size": 32,
+        "n_best_size": 20,
+        "max_answer_length": 512,
+        "no_cuda": false,
+        "seed": 42,
+        "do_lower_case": true,
+        "verbose_logging": false,
+        "local_rank": -1
+    },
+    "rerank":{
+        "model_name_or_path": "checkpoints/rerank_model",
+        "model_type": "bert",
+        "max_seq_length": 128,
+        "per_gpu_predict_batch_size": 5,
+        "no_cuda": false,
+        "seed": 42,
+        "do_lower_case": true,
+        "local_rank": -1 
+    }
+}
